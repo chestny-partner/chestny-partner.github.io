@@ -177,6 +177,17 @@ input[type=range]:focus-visible{outline:2px solid var(--accent);outline-offset:6
 .vphoto figcaption b{color:var(--accent)}
 .vphoto figcaption small{display:block;color:var(--muted);font-weight:500;font-size:13px;margin-top:6px}
 @media(max-width:900px){.voices{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:min(280px,74%);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.voices>*{scroll-snap-align:start}}
+.tq{margin:12px 0 0;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--r);padding:clamp(24px,4vw,40px);display:grid;gap:20px}
+.tq blockquote{margin:0;display:grid;gap:14px;font-size:clamp(16px,1.8vw,19px);line-height:1.55}
+.tq blockquote p:first-child::before{content:"«";color:var(--accent);font-size:44px;line-height:0;vertical-align:-.35em;margin-right:4px}
+.tq blockquote b{color:var(--accent)}
+.tq figcaption{display:flex;align-items:center;gap:14px;color:var(--muted);font-size:14px}
+.tq figcaption b{display:block;color:var(--text);font-size:16px}
+.tq .avatar{width:44px;height:44px;border-radius:50%;background:var(--card2);display:grid;place-items:center;font-weight:800;color:var(--accent);flex:none}
+.resp{margin:-12px 0 32px;background:var(--card);border:1px solid var(--accent);border-radius:22px;padding:22px 26px;display:grid;gap:8px;max-width:900px}
+.resp b{font-size:clamp(18px,2.2vw,22px)}
+.resp span{color:var(--muted)}
+.resp q{color:var(--text);quotes:"«" "»"}
 .proofchat{margin-top:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,4vw,40px);display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(24px,4vw,48px);align-items:center}
 .proofchat h3{font-size:clamp(22px,2.6vw,30px);margin-bottom:18px}
 .proofchat ol{padding-left:22px;display:grid;gap:10px;font-size:17px}
@@ -449,6 +460,13 @@ footer a:hover{color:var(--text)}
       <div class="vid reveal"><video src="video/partner2.mp4?v=2" poster="video/partner2.jpg" preload="none" playsinline></video><span class="dur">0:31</span><div class="ov"><span class="play"></span><q>Самая лёгкая и самая приятная работа — просто репостить объявление в свой WhatsApp.</q><small><b>Дмитрий</b> · «еду снимать денежку»</small></div></div>
       <figure class="vphoto reveal"><img src="img/partner-photo.jpg" alt="Алексей вручает партнёру Александру выплату в рамке" loading="lazy"><figcaption><b>Александр</b>, автоподбор<br><small>Вручили выплату в рамке 🖼</small></figcaption></figure>
     </div>
+    <figure class="tq reveal">
+      <blockquote>
+        <p>С самого детства автомобили были для меня не просто средством передвижения, а настоящим увлечением — могла часами рассматривать журналы «За рулём» 😅 Я поняла, что могу превратить свою страсть в дело, которое приносит не только деньги за приведённого клиента, но и удовольствие.</p>
+        <p>Алексея я знаю как честного и добросовестного человека, которому можно доверять. Ничего сложного в том, чтобы выставлять статусы, нет. <b>Я просто помогаю людям получить машину мечты, в которой они будут уверены на все сто процентов.</b> Мои клиенты остались довольны, а я радуюсь деньгам за приведённого клиента.</p>
+      </blockquote>
+      <figcaption><span class="avatar">Т</span><span><b>Татьяна</b>Ростовская область · привела 2 клиентов</span></figcaption>
+    </figure>
     <div class="proofchat reveal">
       <div>
         <h3>Как это выглядит в переписке</h3>
@@ -519,6 +537,10 @@ footer a:hover{color:var(--text)}
     <div class="eyebrow">Почему нам верят</div>
     <h2>Вы рекомендуете <em>проверенную</em> команду</h2>
     <p class="sub">Знакомому не будет стыдно за ваш совет. Вот что получает человек, которого вы к нам привели.</p>
+    <div class="resp reveal">
+      <b>Рекомендуя нас, вы ручаетесь за нас перед друзьями. Мы это понимаем.</b>
+      <span>Поэтому к каждому, кого привёл партнёр, — особое внимание: договор, проверка машины до покупки, личная приёмка и выдача. Наш самый активный партнёр Дмитрий говорит так: <q>Это мои друзья, я за них отвечаю. Ещё ни одного случая не было, чтобы кто-то пожаловался — все, кто заказывали, остались довольны</q>.</span>
+    </div>
     <div class="stats">
       <div class="stat reveal"><b data-count="1800" data-suffix="+">0</b><span>авто подобрано и выдано</span></div>
       <div class="stat reveal"><b data-count="4.8" data-dec="1">0</b><span>рейтинг на Яндекс Картах</span></div>
